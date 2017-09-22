@@ -2,7 +2,7 @@
 <!-- Created by Professor Wergeles for CS4830 at the University of Missouri -->
 <html>
     <head>
-        <title>History-Based Navigation</title>
+        <title>home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
@@ -55,8 +55,8 @@
                 var request = path.split("/").pop(); 
                 
                 // request the content 
-                if(request == "about"){
-                    $.get("about.html", stageContent); 
+                if(request == "about"){   
+		$.get("about.html", stageContent); 
                 }
                 else if(request == "contact"){
                     $.get("contact.html", stageContent); 
@@ -93,9 +93,9 @@
                 <nav role="navigation">
                     <ul class="nav nav-pills pull-right">
                     
-                        <li><a href="./">Home</a></li>
-                        <li><a href="./about">About</a></li>
-                        <li><a href="./contact">Contact</a></li>
+                        <li role="presentation" class="active"><a href="./">Home</a></li>
+                        <li role="presentation" class="active"><a href="./about">About</a></li>
+                        <li role="presentation" class="active"><a href="./contact">Contact</a></li>
                         
                     </ul>
                 </nav>
